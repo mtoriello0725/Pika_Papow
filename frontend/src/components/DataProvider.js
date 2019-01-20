@@ -21,7 +21,7 @@ class DataProvider extends Component {
       .then(data => this.setState({ data: data, loaded: true }));
   }
   render() {
-    const { data, loaded, placeholder } = this.stat0e;
+    const { data, loaded, placeholder } = this.state;
     return loaded ? this.props.render(data) : <p>{placeholder}</p>;
   }
 }

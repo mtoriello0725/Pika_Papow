@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import key from "weak-key";
 const Table = ({ data }) =>
-  !data.length ? (
-    <p>Nothing to show</p>
+  !data ? (
+    <p>Nothing to show!!</p>
   ) : (
     <div className="column">
       <h2 className="subtitle">
